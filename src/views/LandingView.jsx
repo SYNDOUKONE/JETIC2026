@@ -128,12 +128,7 @@ const LandingView = () => {
         </div>
 
         
-        <button 
-          onClick={goToExternalHackathon} 
-          className="mt-10 px-12 py-4 rounded-full text-lg font-bold text-white shadow-lg bg-[#f94c10] hover:bg-[#e0440e] transition-all transform hover:scale-110 active:scale-95"
-        >
-          Decouvrir
-        </button>
+        
       </header>
 
       {/* --- SECTION INFOS --- */}

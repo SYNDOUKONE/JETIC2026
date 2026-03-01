@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-
+import exposé2 from '../img/exposé2.jpg';
+import SIImg from '../img/SI.jpg';
+import SI2Img from '../img/SI2.jpg';
+import mur from '../img/mur.jpg';
+import hackathon from '../img/hackathon.jpg';
+import atelier from '../img/atelier.jpg';
 
 const EventCard = ({ title, date, image, description }) => (
   <div className="min-w-[280px] md:min-w-[320px] bg-white rounded-3xl shadow-md overflow-hidden snap-start hover:shadow-2xl transition-all duration-500 border border-gray-100 transform hover:-translate-y-2 group">
@@ -123,7 +128,7 @@ const LandingView = () => {
         
         <div className="mt-10 max-w-3xl w-full relative">
           <div className="rounded-[40px] md:rounded-[55px] overflow-hidden shadow-2xl border-4 border-white">
-            <img src="/image.png" alt="Innovation Brain" className="w-full h-auto object-cover" />
+            <img src={SIImg} alt="Innovation Brain" className="w-full h-auto object-cover" />
           </div>
         </div>
 
@@ -138,7 +143,7 @@ const LandingView = () => {
             <h2 className="text-2xl md:text-3xl font-extrabold text-[#1e3a8a]">C'est quoi la SDI ?</h2>
             <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-md">La Semaine de l'Innovation est un événement phare de l'ESATIC visant à mettre en lumière les projets technologiques.</p>
             <div className="rounded-[30px] overflow-hidden shadow-lg w-full max-w-sm border-2 border-gray-50 group">
-              <img src="/75607.jpg.jpeg" alt="Tech" className="w-full h-56 object-cover transition-transform duration-1000 group-hover:scale-110" />
+              <img src={mur} alt="Tech" className="w-full h-56 object-cover transition-transform duration-1000 group-hover:scale-110" />
             </div>
           </div>
           <div className="flex flex-col items-end text-right space-y-5 md:mt-24">
@@ -159,9 +164,10 @@ const LandingView = () => {
           <h2 className="font-bold text-xl uppercase tracking-widest mb-10 text-gray-800">Les événements au programme</h2>
           <div className="flex overflow-x-auto pb-8 gap-6 snap-x scrollbar-hide px-2">
             <EventCard title="La Jetic" date="27 fév au 02 mars 2026" image="/jet.jpeg" description="Les Journées de l'Entrepreneuriat et des TIC." />
-            <EventCard title="Le Salon de l'Innovation" date="27 fév au 02 mars 2026" image="/Si.JPG.jpeg" description="Une exposition immersive des meilleurs projets." />
-            <EventCard title="Le Technovore Hackathon" date="27 fév au 02 mars 2026" image="/ht.JPG.jpeg" description="Un marathon de code intense." />
-            <EventCard title="Conférences" date="27 fév au 02 mars 2026" image="/conf.jpeg" description="Des experts de renown partagent leur vision." />
+            <EventCard title="Présentation de la CID" date="27 fév au 02 mars 2026" image={exposé2} description="Une exposition immersive des meilleurs projets." />
+            <EventCard title="Le Technovore Hackathon" date="27 fév au 02 mars 2026" image={hackathon} description="Un marathon de code intense." />
+            <EventCard title="Atelier" date="27 fév au 02 mars 2026" image={atelier} description="Échanges pratiques et découverte des technologies." />
+            <EventCard title="Le Salon de l'Innovation" date="27 fév au 02 mars 2026" image={SI2Img} description="Démonstration des projets innovants des étudiants." />
           </div>
         </div>
       </section>
